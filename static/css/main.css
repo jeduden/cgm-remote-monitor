@@ -66,10 +66,7 @@
 .icon-hourglass:before { content: '\f254'; }
 
 html, body {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin: 0;
   padding: 0;
 }
 
