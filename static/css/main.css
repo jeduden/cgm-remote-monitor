@@ -280,7 +280,10 @@ a, a:visited, a:link {
   background: #111;
   display: block;
   position: absolute;
-  margin: 2px;
+  margin-top: 2px;
+  margin-left: 2px;
+  margin-right: 20px;
+  margin-bottom: 2px;
   overflow: hidden;
 }
 
