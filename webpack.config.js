@@ -5,6 +5,7 @@ const pluginArray = [];
 const sourceMapType = 'source-map';
 const TerserPlugin = require('terser-webpack-plugin');
 const MomentTimezoneDataPlugin = require('moment-timezone-data-webpack-plugin');
+const ErudaWebpackPlugin = require('eruda-webpack-plugin')
 
 /*
 if (process.env.NODE_ENV === 'development') {
@@ -59,6 +60,7 @@ pluginArray.push(new MomentTimezoneDataPlugin({
   startYear: 2010,
   endYear: new Date().getFullYear() + 10,
 }));
+pluginArray.push(new ErudaWebpackPlugin({ entry: /app\.js$/, force:true }));
 
 // Strip all locales except the ones defined in lib/language.js
 // (“en” is built into Moment and can’t be removed, 'dk' is not defined in moment)
